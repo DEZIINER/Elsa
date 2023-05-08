@@ -718,10 +718,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],  [
              InlineKeyboardButton('🌍 ᴄᴏᴜɴᴛʀʏ 🌍', callback_data='country'),
              InlineKeyboardButton('⚡ ᴅᴇᴘʟᴏʏ ⚡', callback_data='deploy'),
+             InlineKeyboardButton('💌 ꜱʜᴀʀᴇ 💌', callback_data='sharetxt'),
         ],  [
              InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-             InlineKeyboardButton('ᴘᴏʀɴ🔞', url='https://t.me/+G_NK1KOuNQAwY2I1'),
-             InlineKeyboardButton('💌 ꜱʜᴀʀᴇ 💌', callback_data='share'),
+             InlineKeyboardButton('ᴘᴏʀɴ🔞', url='https://t.me/+G_NK1KOuNQAwY2I1'),            
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1254,7 +1254,7 @@ async def auto_filter(client, msg, spoll=False):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton("Send All !", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
+            InlineKeyboardButton('🔥𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳🔥', url='https://t.me/MYFLiiX/774')
         ]
     )
     btn.insert(2, 
