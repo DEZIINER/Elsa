@@ -200,7 +200,7 @@ async def next_page(bot, query):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton("Send All !", callback_data=f"send_fall#files#{key}#{offset}")
+            InlineKeyboardButton('🔥𝙷𝙾𝚆 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳🔥', url='https://t.me/MYFLiiX/774')
         ]
     )
     btn.insert(2, 
