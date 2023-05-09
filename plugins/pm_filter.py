@@ -719,6 +719,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('🌍 ᴄᴏᴜɴᴛʀʏ 🌍', callback_data='country'),
              InlineKeyboardButton('⚡ ᴅᴇᴘʟᴏʏ ⚡', callback_data='deploy'),
              InlineKeyboardButton('💌 ꜱʜᴀʀᴇ 💌', callback_data='sharetxt'),
+             InlineKeyboardButton('🔑 ɢᴇɴ-ᴘᴀꜱꜱ', callback_data='gen_pass'),
         ],  [
              InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
              InlineKeyboardButton('ᴘᴏʀɴ🔞', url='https://t.me/+G_NK1KOuNQAwY2I1'),            
@@ -1046,7 +1047,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )      
-    elif query.data == "stats":
+    elif query.data == "gen_pass":
+        buttons = [[
+            InlineKeyboardButton('«𝙱𝙰𝙲𝙺', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GEN_PASS,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )      
+     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('ʀᴇғʀᴇsʜ', callback_data='rfrsh')
