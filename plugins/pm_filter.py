@@ -1450,8 +1450,8 @@ async def auto_filter(client, msg, spoll=False):
                 ]
                 for file in files
             ]
-    try:
-        key = f"{message.chat.id}-{message.id}" 
+  
+    key = f"{message.chat.id}-{message.id}" 
         
     btn.insert(0, 
         [
