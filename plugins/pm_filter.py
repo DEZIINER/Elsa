@@ -134,7 +134,7 @@ async def next_page(bot, query):
         await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
         return
 
-    files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
+    files, n_offset, total = await get_search_results(chatid, search, offset=offset, filter=True)
     try:
         n_offset = int(n_offset)
     except:
@@ -418,9 +418,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                 ],
             )
 
-    btn.insert(0, [
-        InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Fɪʟᴇs Tᴏ PM !",callback_data=f"send_fall#files#{key}#{offset}")
-    ])
+    
     offset = 0
 
     btn.append(        [
