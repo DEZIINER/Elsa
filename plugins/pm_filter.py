@@ -134,7 +134,7 @@ async def next_page(bot, query):
         await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
         return
 
-    files, n_offset, total = await get_search_results(chatid, search, offset=offset, filter=True)
+    files, n_offset, total = await get_search_results(chat_id, search, offset=offset, filter=True)
     try:
         n_offset = int(n_offset)
     except:
